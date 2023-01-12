@@ -1,9 +1,8 @@
 import React,  {useState, useEffect} from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
-
-// import { images } from '../../constants';
 import { urlFor, client } from '../../client'; 
+import { AppWrap } from '../../wraper';
 
 const About = () => {
   const [abouts, setAbouts] =  useState([]);
@@ -22,7 +21,7 @@ const About = () => {
         { abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
             key={ about.title + index }
@@ -37,4 +36,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About, 'about');
