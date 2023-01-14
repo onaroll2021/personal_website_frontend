@@ -1,3 +1,17 @@
+#skills  {
+
+  .app__wraper {
+    display:  flex;
+    flex-direction: column;
+    width: 75%;
+
+    .copyright {
+      padding: 0;
+
+    }
+  }
+}
+
 .app__skills {
   flex: 1;
   width: 100%;
@@ -23,8 +37,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-
-  margin-right: 5rem;
   
   @media screen and(max-width: 900px) {
     margin-right: 0;

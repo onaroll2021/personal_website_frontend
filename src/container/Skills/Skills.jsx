@@ -11,7 +11,7 @@ const Skills = () => {
   const [skills, setSkills] =useState([]);
 
   useEffect(() => {
-    const query = '*[_type ==  "experiences"]';
+    const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
     client.fetch(query).then((data) => {
       setExperiences(data);
@@ -22,7 +22,7 @@ const Skills = () => {
   }, []);
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Skills & Experience</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
@@ -85,5 +85,5 @@ const Skills = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Skills, 'app__akills'), 'skills', 'app__whitebg',
+  MotionWrap(Skills, 'app__skills'), 'skills', 'app__whitebg',
 )
