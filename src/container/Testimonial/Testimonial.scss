@@ -1,3 +1,17 @@
+#testimonials  {
+
+  .app__wraper {
+    display:  flex;
+    flex-direction: column;
+    width: 75%;
+
+    .copyright {
+      padding: 0;
+
+    }
+  }
+}
+
 .app__testimonial {
   flex: 1;
   width: 100%;
@@ -27,7 +41,7 @@
     min-height: 450px;
 
     img  {
-      width:150px;
+      width: 150px;
       height: 150px;
     }
   }
@@ -81,7 +95,7 @@
   }
 }
 
-.app__testimonial-btns {
+.app__testimonials-btns {
   flex-direction: row;
   margin-top: 1rem;
 
